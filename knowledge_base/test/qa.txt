@@ -6,3 +6,4 @@ Please provide further explanation or elaboration on the examples of generative 
 Greeting the user
 To greet the assistant.
 hello
+Greeting the assistant

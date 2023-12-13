@@ -1,11 +1,11 @@
 import os
 
 
-# 默认向量库类型。可选：faiss, milvus, pg.
+# 默认向量库类型。
 DEFAULT_VS_TYPE = "faiss"
 
 # 缓存向量库数量（针对FAISS）
-CACHED_VS_NUM = 1
+CACHED_VS_NUM = 3
 
 # 知识库中单段文本长度(不适用MarkdownHeaderTextSplitter)
 CHUNK_SIZE = 250
@@ -54,20 +54,10 @@ if not os.path.exists(KB_ROOT_PATH):
 DB_ROOT_PATH = os.path.join(KB_ROOT_PATH, "info.db")
 SQLALCHEMY_DATABASE_URI = f"sqlite:///{DB_ROOT_PATH}"
 
-# 可选向量库类型及对应配置
+# 向量库类型及对应配置
 kbs_config = {
     "faiss": {
     },
-    "milvus": {
-        "host": "127.0.0.1",
-        "port": "19530",
-        "user": "",
-        "password": "",
-        "secure": False,
-    },
-    "pg": {
-        "connection_uri": "postgresql://postgres:postgres@127.0.0.1:5432/langchain_chatchat",
-    }
 }
 
 # TextSplitter配置项，如果你不明白其中的含义，就不要修改。

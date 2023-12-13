@@ -41,77 +41,9 @@ FSCHAT_MODEL_WORKERS = {
         # False,'vllm',使用的推理加速框架,使用vllm如果出现HuggingFace通信问题，参见doc/FAQ
         "infer_turbo": "vllm" if sys.platform.startswith("linux") else False,
 
-        # model_worker多卡加载需要配置的参数
-        # "gpus": None, # 使用的GPU，以str的格式指定，如"0,1"，如失效请使用CUDA_VISIBLE_DEVICES="0,1"等形式指定
-        # "num_gpus": 1, # 使用GPU的数量
-        # "max_gpu_memory": "20GiB", # 每个GPU占用的最大显存
-
-        # 以下为model_worker非常用参数，可根据需要配置
-        # "load_8bit": False, # 开启8bit量化
-        # "cpu_offloading": None,
-        # "gptq_ckpt": None,
-        # "gptq_wbits": 16,
-        # "gptq_groupsize": -1,
-        # "gptq_act_order": False,
-        # "awq_ckpt": None,
-        # "awq_wbits": 16,
-        # "awq_groupsize": -1,
-        # "model_names": [LLM_MODEL],
-        # "conv_template": None,
-        # "limit_worker_concurrency": 5,
-        # "stream_interval": 2,
-        # "no_register": False,
-        # "embed_in_truncate": False,
-
-        # 以下为vllm_woker配置参数,注意使用vllm必须有gpu，仅在Linux测试通过
-
-        # tokenizer = model_path # 如果tokenizer与model_path不一致在此处添加
-        # 'tokenizer_mode':'auto',
-        # 'trust_remote_code':True,
-        # 'download_dir':None,
-        # 'load_format':'auto',
-        # 'dtype':'auto',
-        # 'seed':0,
-        # 'worker_use_ray':False,
-        # 'pipeline_parallel_size':1,
-        # 'tensor_parallel_size':1,
-        # 'block_size':16,
-        # 'swap_space':4 , # GiB
-        # 'gpu_memory_utilization':0.90,
-        # 'max_num_batched_tokens':2560,
-        # 'max_num_seqs':256,
-        # 'disable_log_stats':False,
-        # 'conv_template':None,
-        # 'limit_worker_concurrency':5,
-        # 'no_register':False,
-        # 'num_gpus': 1
-        # 'engine_use_ray': False,
-        # 'disable_log_requests': False
 
     },
-    # 可以如下示例方式更改默认配置
-    # "baichuan-7b": { # 使用default中的IP和端口
-    #    "device": "cpu",
-    # },
 
-    "zhipu-api": { # 请为每个要运行的在线API设置不同的端口
-        "port": 21001,
-    },
-    "minimax-api": {
-        "port": 21002,
-    },
-    "xinghuo-api": {
-        "port": 21003,
-    },
-    "qianfan-api": {
-        "port": 21004,
-    },
-    "fangzhou-api": {
-        "port": 21005,
-    },
-    "qwen-api": {
-        "port": 21006,
-    },
 }
 
 # fastchat multi model worker server
