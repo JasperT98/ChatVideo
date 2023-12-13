@@ -1,0 +1,4 @@
+2023-12-13 16:35:11 | ERROR | stderr | INFO:     Started server process [9419]
+2023-12-13 16:35:11 | ERROR | stderr | INFO:     Waiting for application startup.
+2023-12-13 16:35:11 | ERROR | stderr | INFO:     Application startup complete.
+2023-12-13 16:35:11 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)

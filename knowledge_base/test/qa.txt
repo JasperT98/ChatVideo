@@ -1,0 +1,7 @@
+The user is initiating a conversation.
+Please provide an explanation of generative AI.
+Provide information about today's weather.
+Examples of generative AI.
+Please provide further explanation or elaboration on the examples of generative AI that were provided.
+Greeting the user
+To greet the assistant.
