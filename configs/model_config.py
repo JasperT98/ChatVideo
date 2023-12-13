@@ -131,7 +131,7 @@ ONLINE_LLM_MODEL = {
     "gpt-3.5-turbo": {
         "api_base_url": "https://api.openai.com/v1",
         "api_key": "",
-        "openai_proxy": "",
+        "openai_proxy": "hhhh",
     },
     # 线上模型。请在server_config中为每个在线API设置不同的端口
     # 具体注册及api key获取请前往 http://open.bigmodel.cn

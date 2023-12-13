@@ -5,3 +5,4 @@ Examples of generative AI.
 Please provide further explanation or elaboration on the examples of generative AI that were provided.
 Greeting the user
 To greet the assistant.
+hello
